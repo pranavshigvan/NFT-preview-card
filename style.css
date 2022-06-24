@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+.card {
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 5px 5px 15px 15px hsl(215, 33%, 10%);
+}
+.img_container, .nft_img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.view {
+    background-color: hsla(178, 100%, 50%, 0.6);
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    display: none;
+    place-items: center;
+}
+.img_container:hover .view { 
+    display: grid;
+} 
+h2 {
+    padding: 10px 0;
+    color: white;
+}
+h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+.card p {
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 10px;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.stats h3 {
+    color: hsl(178, 100%, 50%);
+    font-size: 20px;
+}
+.stats p span,.stats h3 span{
+    margin-right: 5px;
+}
+.avtar {
+    color:hsl(215, 51%, 70%);
+}
+.author {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+.author img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+.avtar .name {
+    color: white;
+}
+.avtar .name:hover {
+    color: hsl(178, 100%, 50%);
+}
